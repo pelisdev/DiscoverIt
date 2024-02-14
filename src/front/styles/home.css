@@ -1,7 +1,30 @@
-/*
-    home.css: This website contains selectors only used in home.css
-
-    All pages share the styles on index.css but you should create 
-    one more css for each page that will contain the selected used 
-    on that page only (the ones not reused in other pages).
-*/
+.poster-container {
+    position: relative;
+  }
+  
+  .poster-image {
+    width: 290px !important; /* Puedes ajustar el tamaño según tus necesidades */
+    height: 300px; /* Puedes ajustar el tamaño según tus necesidades */
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .movie-info,
+  .series-info {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    display: none;
+  }
+  
+  .poster-container:hover .movie-info,
+  .poster-container:hover .series-info {
+    display: block;
+  }
+  
